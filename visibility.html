@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visbility and layout L-13</title>
+    <style>
+        .container{
+            border: 2px solid red;
+            background-color: aquamarine;
+            position: sticky;
+            position: -webkit-sticky;
+            top: 0%;
+            overflow: auto;
+        }
+        .cont2{
+            border: 2px solid green;
+            background-color: rgb(150, 86, 223);
+            margin-top: 20px;
+        }
+        .img1{
+            float: right;
+            width: 200px;
+            z-index: -1;
+            position: absolute;
+            right: 0%;
+            top: 0%;
+        }
+        .d3{
+            border: 2px solid black;
+            background-color: rgb(197, 175, 218);
+            overflow:scroll;
+            height: 65px;
+        }
+    </style>
+</head>
+<body>
+   
+    <div class="container">
+        <img class="img1" src="tree1.png">
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem sequi dolore repellat fuga. Dolorum labore nisi quae distinctio magni corrupti. Quisquam unde, quas cupiditate amet placeat laborum blanditiis facere quis?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem sequi dolore repellat fuga. Dolorum labore nisi quae distinctio magni corrupti. Quisquam unde, quas cupiditate amet placeat laborum blanditiis facere quis?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem sequi dolore repellat fuga. Dolorum labore nisi quae distinctio magni corrupti. Quisquam unde, quas cupiditate amet placeat laborum blanditiis facere quis?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem sequi dolore repellat fuga. Dolorum labore nisi quae distinctio magni corrupti. Quisquam unde, quas cupiditate amet placeat laborum blanditiis facere quis?
+        </p>
+
+    </div>
+    <div class="cont2">
+        <p>
+         Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit natus cum tempore laudantium molestias quaerat aliquam mollitia sed blanditiis reiciendis id rem exercitationem sint eaque fuga, rerum dolore velit quas.
+         Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit natus cum tempore laudantium molestias quaerat aliquam mollitia sed blanditiis reiciendis id rem exercitationem sint eaque fuga, rerum dolore velit quas.Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit natus cum tempore laudantium molestias quaerat aliquam mollitia sed blanditiis reiciendis id rem exercitationem sint eaque fuga, rerum dolore velit quas.
+        </p>
+    </div>
+    <div class="d3">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur odit possimus facilis ratione quae corrupti est blanditiis maxime eaque vel nisi, odio nam repudiandae et accusantium nesciunt earum esse incidunt.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur odit possimus facilis ratione quae corrupti est blanditiis maxime eaque vel nisi, odio nam repudiandae et accusantium nesciunt earum esse incidunt.
+        </p>
+    </div>
+    
+</body>
+</html>

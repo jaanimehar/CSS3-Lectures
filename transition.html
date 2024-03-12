@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition L-24</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        div{
+            display: flex;
+            width: 250px;
+            height: 250px;
+            background-color: red;
+            justify-content: center;
+             align-items: center;
+            color: aliceblue;
+
+            transition: all;
+            transition-duration: 1s;
+            transition-timing-function: ease-in-out;
+
+        }
+        div:hover{
+            background-color: rgb(31, 183, 4);
+            width: 300px;
+            height: 300px;
+            border-radius: 5%;
+            opacity: 0.5;
+            font-size: 40px;
+            box-shadow: 6px 6px rgb(229, 93, 9);
+            text-shadow: 5px 5px rgb(12, 12, 12);
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>transition</h1>
+    </div>
+</body>
+</html>

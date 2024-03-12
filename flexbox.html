@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox L-21</title>
+    <style>
+        .container{
+            border: 6px solid black;
+            display: flex;
+            height: 700px;
+            /* width: 100%; */
+            flex-direction: row;
+            flex-wrap: wrap;
+            /* justify-content: space-around; */
+            /* justify-content: space-between; */
+            /* justify-content: space-evenly; */
+            /* align-content: center; */
+            /* align-content: flex-start; */
+            /* align-items: center; */
+            /* align-items: self-end; */
+            /* align-items: self-start; */
+            align-items: stretch;
+
+        }
+        .item{
+            background-color: greenyellow;
+            border: 2px solid black;
+            width: 200px;
+            height: 200px;
+            margin: 10px;
+            padding: 3px;
+            text-align: center;
+            color: red;
+            font-family: fantasy;
+            font-size: 72px;
+        }
+        #item1{
+            /* order: 2; */
+            /* flex-grow:5 ; */
+            flex-shrink: 5;
+        }
+        #item2{
+            /* order: 1; */
+            flex-grow: 5;
+            /* flex-shrink:5 ; */
+        }
+        #item3{
+            order: 4;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item" id="item1">1</div>
+        <div class="item" id="item2">2</div>
+        <div class="item" id="item3">3</div>
+        <div class="item" id="item4">4</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRid LAyout L-29</title>
+    <style>
+        #item1{grid-area: header;}
+        #item2{grid-area: menu;}
+        #item3{grid-area: content;}
+        #item4{grid-area: post;}
+        #item5{grid-area: footer;}
+
+        .container{
+            display: grid;
+            gap: 10px;
+            grid-template-areas: 
+            'header header header header header header'
+            'menu content content content post post'
+            'footer footer footer footer footer footer';
+            padding: 10px;
+            /* background-color: blue; */
+        }
+        .box{
+            background-color: white;
+            border: 2px solid black;
+            font-size: 30px;
+            font-family: fantasy;
+            text-align: center;
+        }
+        @media only screen and (max-width:400px) {
+            body{
+                background-color: yellow;
+            }
+        }
+        @media only screen and (min-width:400px) and (max-width:1200px) {
+            body{
+                background-color: blue;
+            }
+            .container{
+                grid-template-areas:
+            'header header header header header header'
+            'menu content content content content content  '
+            'menu post post post post post  '
+            'footer footer footer footer footer footer' ;
+            }
+        }
+        @media only screen and (min-width:1200px) and (max-width:1700px) {
+            body{
+                background-color: red;
+            }
+            .container{ 
+                grid-template-areas:
+            'header header header header header header'
+            'menu menu content content content content  '
+            'menu menu post post post post '
+            'menu menu footer footer footer footer' ;
+            }
+        }
+        @media only screen and (min-width:1700px) and (max-width:2400px) {
+            body{
+                background-color: green;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="item1">header</div>
+        <div class="box" id="item2">menu</div>
+        <div class="box" id="item3">main content</div>
+        <div class="box" id="item4">latest post</div>
+        <div class="box" id="item5">footer</div>
+    </div>
+</body>
+</html>

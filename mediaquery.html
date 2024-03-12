@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media query L-20</title>
+    <style>
+        .div{
+            border: 2px solid rgb(39, 86, 237);
+            background-color: rgb(227, 237, 237);
+            color: rgb(231, 63, 16);
+            font-family: fantasy;
+            font-size: 72px;
+            margin: 4px;
+            padding: 3px;
+            text-align: center;
+        }
+        @media (max-width:700px) {
+            #div1{
+                display: block;
+                background-color: violet;
+                text-align: center;
+            border: 2px solid rgb(2, 5, 13);
+         }
+            
+        }
+        @media (max-width:30 00px) {
+            #div2{
+                display: block;
+                background-color: rgb(55, 219, 14);
+                text-align: left;
+            border: 2px solid rgb(236, 237, 241);
+         }
+            
+        }
+        @media (max-width:600px) {
+            #div3{
+                display: block;
+                background-color: rgb(233, 240, 234);
+                text-align: right;
+            border: 2px dashed rgb(206, 129, 22);
+         }
+            
+        }
+        @media (max-width:2000px) {
+            #div4{
+                display: block;
+                background-color: rgb(38, 148, 216);
+                text-align: left;
+            border: 2px double rgb(25, 216, 32);
+         }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="div" id="div1">Bike</div>
+    <div class="div" id="div2">Car</div>
+    <div class="div" id="div3">Mobile</div>
+    <div class="div" id="div4">Truck</div>
+</body>
+</html>

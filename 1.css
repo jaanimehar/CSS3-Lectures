@@ -1,0 +1,5 @@
+#h2{
+    border: 2px solid blue;
+    color: rgb(204, 0, 255); /*text color*/
+    background-color: hsl(220, 60%, 50%);
+}
